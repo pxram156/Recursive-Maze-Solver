@@ -15,7 +15,7 @@ Each input starts with four integers: row count, column count, starting row, and
 
 ## Requirements
 
-A Java Development Kit and the Brock Java library (`brock.*`) are required. The local project uses `brock-v-1-0-28.jar`; obtain the library separately and add it to your project's classpath.
+A Java Development Kit and the Brock Java library (`brock.*`) are required. The required `brock-v-1-0-28.jar` is included in this repository; add it to your project's classpath.
 
 Open the sources in IntelliJ IDEA, configure the Brock JAR as a dependency, and run `RecursiveMaze.main`. The program uses `ASCIIDataFile` for file selection and prints its results to the console.
 
