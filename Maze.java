@@ -3,7 +3,6 @@ import brock.*;
 /**
  * Paramjot Sawhney
  * COSC 1p03
- * Assignment 4 solve maze in a ASCIIDataFile
  */
 public class Maze {
 
