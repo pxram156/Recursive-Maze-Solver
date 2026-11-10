@@ -1,24 +1,24 @@
 # Recursive Maze Solver
 
-A Java coursework project that uses recursive depth-first search and backtracking to find a route through a text-based maze.
-
-## Features
-
-- Reads maze dimensions and grid data from a text file.
-- Starts at the first open space and searches for the exit (`E`).
-- Marks the route with direction symbols and dead ends with dots.
-- Writes the result to `solution.txt`.
+A Java coursework project that explores a maze recursively, marks directions with arrows, and reports the step count when it reaches the destination.
 
 ## Files
 
-- `Maze.java`: program source.
-- `mz1.txt` and `mz2.txt`: sample maze inputs.
-- `solution.txt`: example output for the small maze.
+- `RecursiveMaze.java`: maze loading, recursive exploration, and console output.
+- `Direction.java`: direction enum used to mark the maze.
+- `maze1.txt`, `maze2.txt`, `maze3.txt`: sample maze inputs.
+- `maze1u.txt`, `maze2u.txt`, `maze3u.txt`: additional maze inputs.
 
-## Requirements and running
+## Input format
 
-This project uses the Brock Java library (`brock.*`), including `ASCIIDataFile` and `ASCIIOutputFile`. The library is required and is not included in this repository.
+Each input starts with four integers: row count, column count, starting row, and starting column. The remaining characters describe the grid: `*` for walls, spaces for open cells, `A` for the start, and `B` for the destination.
 
-Add your copy of the Brock JAR to an IntelliJ Java project's dependencies, add `Maze.java`, and run its `main` method. Select a sample maze when the input-file chooser opens. The program writes `solution.txt` in the working directory.
+## Requirements
 
-Each input begins with the number of rows and columns, followed by the maze grid. `#` represents a wall, a space represents an open cell, and `E` represents the exit.
+A Java Development Kit and the Brock Java library (`brock.*`) are required. The local project uses `brock-v-1-0-28.jar`; obtain the library separately and add it to your project's classpath.
+
+Open the sources in IntelliJ IDEA, configure the Brock JAR as a dependency, and run `RecursiveMaze.main`. The program uses `ASCIIDataFile` for file selection and prints its results to the console.
+
+## Status
+
+This repository preserves the submitted implementation. It closes the input reader before loading the grid and assumes maze boundaries prevent out-of-range recursion; these are limitations to review before relying on the program with other inputs.
